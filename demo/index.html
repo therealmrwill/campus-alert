@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    
+  </style>
+</head>
+<body>
+  <campus-alert issue-level="warning" sticky>
+    <slot title="date">NOVEMBER 17, 2023 12:00 AM</slot>
+    <slot title="message">This is a really <b>amazing</b> message</slot> 
+  </campus-alert>
+
+  <campus-alert issue-level="alert" sticky>
+    <slot title="date">NOVEMBER 17, 2023 12:00 AM</slot>
+    <slot title="message">This is a really <b>amazing</b> message</slot> 
+  </campus-alert>
+
+  <campus-alert issue-level="notice" sticky>
+    <slot title="date">NOVEMBER 17, 2023 12:00 AM</slot>
+    <slot title="message">This is a really <b>amazing</b> message</slot> 
+  </campus-alert>
+
+
+
+
+  <script type="module">
+    import '../campus-alert.js';
+  </script>
+</body>
+</html>
